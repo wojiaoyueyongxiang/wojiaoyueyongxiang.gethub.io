@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Archives</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="css/Fubistyle.css">
+</head>
+<body class="animated bounceInUp">
+	<div id="box">
+		<div id="head">
+			<div id="head-centent">
+				<a href="index.html">
+					<span>←</span>
+					<span>HOME</span>
+				</a>
+				<span>/</span>
+				<a href="index.html">BENOIT CHALLAND</a>				
+			</div>
+		</div>
+		<div>
+			<section class="Archives">
+				<div id="masonry" class="container-fluid">
+					<div class="box"><a href="#"><img src="img/cc_2.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/ldlc_thumb.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/2015_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/stone_1.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/wired_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/energia_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/niceskin_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/corporateknight_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/robust_thumbnail	.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/egg_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/lost_thumbnail.jpg"></a></div>
+					<div class="box"><a href="#"><img src="img/sfw_thumbnail.jpg"></a></div>	
+				</div>
+			</section>
+		</div>
+			
+</body>
+</html>
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+	    	var $container = $('#masonry');
+		    	$container.imagesLoaded(function() {
+		        $container.masonry({
+		                itemSelector: '.box',
+		                gutter: 20,
+		                isAnimated: true,
+		            });
+		     });
+		});
+</script>
