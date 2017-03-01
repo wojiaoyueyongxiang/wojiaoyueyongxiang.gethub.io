@@ -1,0 +1,178 @@
+.shop{
+	width: 250px;
+	height: 460px;
+	margin-top: 20px;
+	border: 1px solid #BEBEBE;
+	border-radius: 7px;
+}
+.shop-img{
+	width: 232px;
+	margin-left: 10px;
+	line-height: 20px;
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.jitui{
+	float: left;
+	border: 2px solid #BEBEBE;
+	margin-right: 15px;
+		
+	
+}	
+
+
+.shop-text>p{
+	font-size: 14px;
+
+}
+.shop1{
+	color: red;
+	text-align: left;
+	margin-bottom: 5px;
+
+}
+.shop2{
+	color: gray;
+	text-align: left;
+
+}
+.shengjia1{
+	position: absolute;
+	left: 60px;
+	top: 35px;
+}
+.chuangyi1{
+	color: black;
+	margin-right:-50px;
+}
+.guangdian{
+	width: 250px;
+	height: 200px;
+	margin-top: 15px;
+	border: 1px solid #BEBEBE;
+	border-radius: 7px;
+}
+.jiudian>img{
+	width: 230px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.jiudian>p{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.zhekou{
+	width: 250px;
+	height: 365px;
+	margin-top: 15px;
+	border: 1px solid #BEBEBE;
+	border-radius: 7px;
+}
+.zhekou-text>ul{
+	font-size: 14px;
+	margin-left: 30px;
+	line-height: 27px;
+
+}
+.zhekou-text>ul>li{
+	color: #FF5151	;}
+.xiuxian1{
+	color: #FF5151	;
+}
+.xiuxian2{
+	color: #BEBEBE;
+}
+.xiuxian3{
+	color: black;
+	margin-left: 5px;
+	
+}
+.zuixinjiameng{
+	width: 250px;
+	height: 390px;
+	margin-top: 15px;
+	border: 1px solid #BEBEBE;
+	border-radius: 7px;
+}
+.jitui1{
+	margin-left: 10px;
+	border: 3px solid #BEBEBE;
+}
+.jiameng-text{
+		margin-left: -120px;
+		font-size: 13px;
+		margin-top: 6px;
+	}
+.jiameng1{
+	color: red;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-left: 127px;
+	
+
+}
+.jiameng2{
+	color: gray;	
+	text-align: left;
+	margin-left: 127px;
+	margin-bottom: 5px;
+		
+
+}
+.jiameng-img{
+	float: left;	
+	margin-top: 5px;
+	margin-right: 23px;
+}
+.jiameng-img5{
+
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.jiameng-ul{
+	margin-top: -5px;
+}
+.footing{
+	width:1002px;
+	height: 60px;	
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.shengming{
+	text-align: center;
+	font-size: 13px;}
+
+.footing-img{
+	text-align: center;
+	margin-top: 10px;
+}
+p:hover,span:hover{
+		color: pink;
+	}
+.xiaotietu>img{
+	position: fixed;
+	top: 300px;
+	left: 50%;
+	margin-left: 480px;
+	}
+.xiaotietu1{
+	position: fixed;
+	top: 300px;
+	margin-left: -210px;
+
+
+}
+.xiaotietu1>img{
+	width: 200px;
+}
+.xiaotietu2{
+	position: fixed;
+	top: 500px;
+	margin-left: -210px;
+
+
+}
+.xiaotietu2>img{
+	width: 200px;
+}

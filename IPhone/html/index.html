@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{font-size: 62.5%;}
+		*{padding: 0; margin: 0;list-style: none;}
+		body{font-size: 62.5%;}
+		@media screen and (min-width: 1053px) {
+			.header2{display: none;}
+			.footer2{display: none;}
+			.header{width: 100%; height: 44px; background: #000;opacity: .8;}
+			.header nav{width: 1000px; height: 44px; margin: 0 auto;}
+			.header nav ul{width: 100%; height: 100%;}
+			.header nav ul li{margin-right: 84px;float:left;}
+			.header nav ul li:hover{opacity: .7;}
+			.header nav ul li a{color: #fff;font-size: 13px; text-decoration: none;}
+			.header nav ul .lis2{margin-right: 0;}
+			.header nav ul .lis1{margin-top: 13px;}
+			.container{width: 100%;}
+			.container .pic_wall{width:1053px;margin: 0 auto; text-align: center;}
+			.container .pic_wall img{width: 100%;}
+			.container .body a div{float: left;border: 1px solid #fff;}
+			.container .body a .body1{width: 24.5%; height:200px;background: url(../img/body1.jpg);background-position:50% 0;}
+			.container .body a .body2{width: 24.5%; height:200px;background: url(../img/body2.jpg);background-position:50% 0;}
+			.container .body a .body3{width: 24.5%; height:200px;background: url(../img/body3.jpg);background-position:50% 0;}
+			.container .body a .body4{width: 24.5%; height:200px;background: url(../img/body4.jpg);background-position:50% 0;}
+			.container .body:after{content: "";display: block;clear: both;}
+			.footer{width: 100%; height: 335px;background: #f2f2f2;padding-top: 35px;}
+			.footer	.footer_nav{width: 985px; height: 220px;margin: 0 auto;}
+			.footer	.footer_nav:after{content: ""; display: block; clear: both;}
+			.xg, .as, .js, .za, .about{float: left;margin-right: 120px;}
+			.about{margin-right: 0;}
+			.footer	.footer_nav h3{font-size: 12px;color:#525252;}
+			.footer	.footer_nav a{font-size:12px;text-decoration: none; color: gray;font-weight: 100;font-family: "STSong";line-height: 20px;}
+			.jy, .zh{margin-bottom: 30px;}
+			.footer	.footer_nav a:hover{color:#000; text-decoration: underline;}
+			.copyright .contact{color: #b0b0b0;font-size: 12px;line-height:40px;border-bottom: 1px solid #e3e3e3;}
+			.copyright .contact a{color:#5492d2; text-decoration: none;display: inline-block; text-align: center;}
+			.copyright .contact a:hover{color:#000; text-decoration: underline;}
+			.copyright span{margin-top: 10px; margin-right: 25px;font-size: 12px; color:#b8b8b8;}
+			.copyright{width: 985px;margin: 0 auto;}
+			.copyright ul{display: inline-block;margin-top: 10px;}
+			.copyright ul li{float: left;}
+			.copyright ul li a{color: #9c9c9c;text-decoration: none; margin-right: 12px;}
+			.copyright ul li a:hover{color:#909090; text-decoration: underline;}
+			.copyright ul .as2{border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;padding: 0 12px;}
+			.copyright .area{float: right;color:#000;}
+			.copyright .filing a{color:#b0b0b0; text-decoration: none;}
+			.copyright .filing a:hover{text-decoration: underline;}
+			.copyright .filing{color:#b0b0b0;margin-top: 20px;}
+		}
+		@media screen and (max-width: 1053px) and (min-width: 767px) {
+			.header2{display: none;}
+			.footer2{display: none;}
+			.header{width: 100%; height: 44px; background: #000;opacity: .8;padding-left:22px;padding-right: 22px;}
+			.header nav{width: 90%; height: 44px; margin: 0 auto;}
+			.header nav ul{width: 100%; height: 100%;}
+			.header nav ul li{margin-right: 6%;float:left;}
+			.header nav ul li:hover{opacity: .7;}
+			.header nav ul li a{color: #fff;font-size: 13px; text-decoration: none;}
+			.header nav ul .lis2{margin-right: 0;}
+			.header nav ul .lis1{margin-top: 13px;}
+			.container{width: 100%;}
+			.container .pic_wall{width:784px;margin: 0 auto; text-align: center;}
+			.container .pic_wall img{width: 100%;}
+			.container .body a div{float: left;border: 1px solid #fff;}
+			.container .body a .body1{width: 49.5%; height:200px;background: url(../img/body1.jpg);background-position:50% 0;}
+			.container .body a .body2{width: 49.5%; height:200px;background: url(../img/body2.jpg);background-position:50% 0;}
+			.container .body a .body3{width: 49.5%; height:200px;background: url(../img/body3.jpg);background-position:50% 0;}
+			.container .body a .body4{width: 49.5%; height:200px;background: url(../img/body4.jpg);background-position:50% 0;}
+			.container .body:after{content: "";display: block;clear: both;}
+			.footer{width: 100%; height: 335px;background: #f2f2f2;padding-top: 35px;/*padding: 0 22px;*/}
+			.footer	.footer_nav{width: 95%; height: 220px;margin: 0 auto;}
+			.footer	.footer_nav:after{content: ""; display: block; clear: both;}
+			.footer .xg, .footer .as, .footer .js, .footer .za, .footer .about{float: left;margin-right: 9%;/*padding-top: 30px;*/}
+			/*.about{margin-right: 0;}*/
+			.footer	.footer_nav h3{font-size: 12px;color:#525252;}
+			.footer	.footer_nav a{font-size:12px;text-decoration: none; color: gray;font-weight: 100;font-family: "STSong";line-height: 20px;}
+			.footer .jy, .footer .zh{margin-bottom: 30px;}
+			.footer	.footer_nav a:hover{color:#000; text-decoration: underline;}
+			.footer .copyright .contact{color: #b0b0b0;font-size: 12px;line-height:40px;border-bottom: 1px solid #e3e3e3;}
+			.footer .copyright .contact a{color:#5492d2; text-decoration: none;display: inline-block; text-align: center;}
+			.footer .copyright .contact a:hover{color:#000; text-decoration: underline;}
+			.footer .copyright span{margin-top: 10px; margin-right: 25px;font-size: 12px; color:#b8b8b8;}
+			.footer .copyright{width: 985px;margin: 0 auto;}
+			.footer .copyright ul{display: inline-block;margin-top: 10px;}
+			.footer .copyright ul li{float: left;}
+			.footer .copyright ul li a{color: #9c9c9c;text-decoration: none; margin-right: 12px;}
+			.footer .copyright ul li a:hover{color:#909090; text-decoration: underline;}
+			.footer .copyright ul .as2{border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;padding: 0 12px;}
+			.footer .copyright .area{float: right;color:#000;}
+			.footer .copyright .filing a{color:#b0b0b0; text-decoration: none;}
+			.footer .copyright .filing a:hover{text-decoration: underline;}
+			.footer .copyright .filing{color:#b0b0b0;margin-top: 20px;}
+		}
+		@media screen and (max-width: 767px) and (min-width: 732px) {
+			.header{display: none;}
+			.footer{display: none;}
+			.header2{width: 100%; height: 48px;background: #000; opacity: .8;}
+			.header2 ul{width: 100%; height: 48px;}
+			.header2 ul .list{margin-left: 16px;float: left;}
+			.header2 ul .logo{text-align: center;}
+			.header2 ul .lock{padding: 0 16px; float: right;}
+			.container{width: 100%;}
+			.container .pic_wall{width:784px;margin: 0 auto; text-align: center;}
+			.container .pic_wall img{width: 100%;}
+			.container .body a div{float: left;border: 1px solid #fff;}
+			.container .body a .body1{width: 49.5%; height:200px;background: url(../img/body1.jpg);background-position:50% 0;}
+			.container .body a .body2{width: 49.5%; height:200px;background: url(../img/body2.jpg);background-position:50% 0;}
+			.container .body a .body3{width: 49.5%; height:200px;background: url(../img/body3.jpg);background-position:50% 0;}
+			.container .body a .body4{width: 49.5%; height:200px;background: url(../img/body4.jpg);background-position:50% 0;}
+			.container .body:after{content: "";display: block;clear: both;}
+		
+			.footer2{width: 100%;background: #f2f2f2;}
+			.footer2:after{content: "";display: block;clear: both;}
+			.footer2 .footer2_nav{width: 100%;padding: 16px;}
+			.footer2 .xg, .footer2 .as, .footer2 .jy, .footer2 .sw, .footer2 .zh, .footer2 .aj, .footer2 .about{
+				width: 95%;height: 28px;border-bottom: 1px solid #e3e3e3;padding-top: 10px;position: relative;}
+			.footer2 span{color: #616161;}
+			.footer2 .span2{float: right; margin-right: 20px;}
+			.footer2 .xg_list, .footer2 .as_list, .footer2 .jy_list, .footer2 .sw_list, .footer2 .zh_list, .footer2 .aj_list, .footer2 .about_list{display: none;position:absolute;top:40px;}
+			.footer2 .xg_list{width: 100%; height: 240px;}
+			.footer2 .xg_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .xg:hover .xg_list{display: block;}
+			.footer2 .xg .xg_list li a:hover{text-decoration: underline;}
+			.footer2 .xg:hover{margin-bottom: 256px;}
+
+			.footer2 .as_list{width: 100%; height: 316px;}
+			.footer2 .as_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .as:hover .as_list{display: block;}
+			.footer2 .as .as_list li a:hover{text-decoration: underline;}
+			.footer2 .as:hover{margin-bottom: 316px;}
+
+			.footer2 .jy_list{width: 100%; height: 76px;}
+			.footer2 .jy_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .jy:hover .jy_list{display: block;}
+			.footer2 .jy .jy_list li a:hover{text-decoration: underline;}
+			.footer2 .jy:hover{margin-bottom: 76px;}
+
+			.footer2 .sw_list{width: 100%; height: 76px;}
+			.footer2 .sw_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .sw:hover .sw_list{display: block;}
+			.footer2 .sw .sw_list li a:hover{text-decoration: underline;}
+			.footer2 .sw:hover{margin-bottom: 76px;}
+
+			.footer2 .zh_list{width: 100%; height: 106px;}
+			.footer2 .zh_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .zh:hover .zh_list{display: block;}
+			.footer2 .zh .zh_list li a:hover{text-decoration: underline;}
+			.footer2 .zh:hover{margin-bottom: 106px;}
+
+			.footer2 .aj_list{width: 100%; height: 136px;}
+			.footer2 .aj_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .aj:hover .aj_list{display: block;}
+			.footer2 .aj .aj_list li a:hover{text-decoration: underline;}
+			.footer2 .aj:hover{margin-bottom: 136px;}
+
+			.footer2 .about_list{width: 100%; height: 166px;}
+			.footer2 .about_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .about:hover .about_list{display: block;}
+			.footer2 .about .about_list li a:hover{text-decoration: underline;}
+			.footer2 .about:hover{margin-bottom: 166px;}
+
+			.footer2 .copyright .contact{color: #b0b0b0;font-size: 12px;line-height:40px;border-bottom: 1px solid #e3e3e3;}
+			.footer2 .copyright .contact a{color:#5492d2; text-decoration: none;display: inline-block; text-align: center;}
+			.footer2 .copyright .contact a:hover{color:#000; text-decoration: underline;}
+			.footer .copyright span{margin-top: 10px; margin-right: 25px;font-size: 12px; color:#b8b8b8;}
+			.footer2 .copyright{width: 100%;margin: 0 auto;}
+			.footer2 .copyright ul{display: inline-block;margin-top: 10px;}
+			.footer2 .copyright ul li{float: left;}
+			.footer2 .copyright ul li a{color: #9c9c9c;text-decoration: none; margin-right: 12px;}
+			.footer2 .copyright ul li a:hover{color:#909090; text-decoration: underline;}
+			.footer2 .copyright ul .as2{border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;padding: 0 12px;}
+			.footer2 .copyright .area{/*float: right;*/color:#000;}
+			.footer2 .copyright .filing a{color:#b0b0b0; text-decoration: none;}
+			.footer2 .copyright .filing a:hover{text-decoration: underline;}
+			.footer2 .copyright .filing{color:#b0b0b0;margin-top: 20px;}
+		}
+		@media screen and (max-width: 732px){
+			.header{display: none;}
+			.footer{display: none;}
+			.header2{width: 100%; height: 48px;background: #000; opacity: .8;}
+			.header2 ul{width: 100%; height: 48px;}
+			.header2 ul .list{margin-left: 16px;float: left;}
+			.header2 ul .logo{text-align: center;}
+			.header2 ul .lock{padding: 0 16px; float: right;}
+			.container{width: 100%;}
+			.container .pic_wall{width:400px;margin: 0 auto; text-align: center;}
+			.container .pic_wall img{width: 100%;}
+			.container .body a div{float: left;/*border: 1px solid #fff;*/}
+			.container .body a .body1{width: 100%; height:200px;background: url(../img/body1.jpg);background-position:50% 0;}
+			.container .body a .body2{width: 100%; height:200px;background: url(../img/body2.jpg);background-position:50% 0;}
+			.container .body a .body3{width: 100%; height:200px;background: url(../img/body3.jpg);background-position:50% 0;}
+			.container .body a .body4{width: 100%; height:200px;background: url(../img/body4.jpg);background-position:50% 0;}
+			.container .body:after{content: "";display: block;clear: both;}
+			.footer2{width: 100%;background: #f2f2f2;}
+			.footer2:after{content: "";display: block;clear: both;}
+			.footer2 .footer2_nav{width: 100%;padding: 16px;}
+			.footer2 .xg, .footer2 .as, .footer2 .jy, .footer2 .sw, .footer2 .zh, .footer2 .aj, .footer2 .about{
+				width: 95%;height: 28px;border-bottom: 1px solid #e3e3e3;padding-top: 10px;position: relative;
+			}
+			.footer2 span{color: #616161;}
+			.footer2 .span2{float: right; margin-right: 20px;}
+			.footer2 .xg_list, .footer2 .as_list, .footer2 .jy_list, .footer2 .sw_list, .footer2 .zh_list, .footer2 .aj_list, .footer2 .about_list{display: none;position:absolute;top:40px;}
+			.footer2 .xg_list{width: 100%; height: 240px;}
+			.footer2 .xg_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .xg:hover .xg_list{display: block;}
+			.footer2 .xg .xg_list li a:hover{text-decoration: underline;}
+			.footer2 .xg:hover{margin-bottom: 256px;}
+
+			.footer2 .as_list{width: 100%; height: 316px;}
+			.footer2 .as_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .as:hover .as_list{display: block;}
+			.footer2 .as .as_list li a:hover{text-decoration: underline;}
+			.footer2 .as:hover{margin-bottom: 316px;}
+
+			.footer2 .jy_list{width: 100%; height: 76px;}
+			.footer2 .jy_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .jy:hover .jy_list{display: block;}
+			.footer2 .jy .jy_list li a:hover{text-decoration: underline;}
+			.footer2 .jy:hover{margin-bottom: 76px;}
+
+			.footer2 .sw_list{width: 100%; height: 76px;}
+			.footer2 .sw_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .sw:hover .sw_list{display: block;}
+			.footer2 .sw .sw_list li a:hover{text-decoration: underline;}
+			.footer2 .sw:hover{margin-bottom: 76px;}
+
+			.footer2 .zh_list{width: 100%; height: 106px;}
+			.footer2 .zh_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .zh:hover .zh_list{display: block;}
+			.footer2 .zh .zh_list li a:hover{text-decoration: underline;}
+			.footer2 .zh:hover{margin-bottom: 106px;}
+
+			.footer2 .aj_list{width: 100%; height: 136px;}
+			.footer2 .aj_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .aj:hover .aj_list{display: block;}
+			.footer2 .aj .aj_list li a:hover{text-decoration: underline;}
+			.footer2 .aj:hover{margin-bottom: 136px;}
+
+			.footer2 .about_list{width: 100%; height: 166px;}
+			.footer2 .about_list li a{color: #878787; font-size: 12px;line-height: 30px; text-decoration: none;}
+			.footer2 .about:hover .about_list{display: block;}
+			.footer2 .about .about_list li a:hover{text-decoration: underline;}
+			.footer2 .about:hover{margin-bottom: 166px;}
+
+			.footer2 .copyright .contact{color: #b0b0b0;font-size: 12px;line-height:40px;border-bottom: 1px solid #e3e3e3;}
+			.footer2 .copyright .contact a{color:#5492d2; text-decoration: none;display: inline-block; text-align: center;}
+			.footer2 .copyright .contact a:hover{color:#000; text-decoration: underline;}
+			.footer .copyright span{margin-top: 10px; margin-right: 25px;font-size: 12px; color:#b8b8b8;}
+			.footer2 .copyright{width: 100%;margin: 0 auto;}
+			.footer2 .copyright ul{display: inline-block;margin-top: 10px;}
+			.footer2 .copyright ul li{float: left;}
+			.footer2 .copyright ul li a{color: #9c9c9c;text-decoration: none; margin-right: 12px;}
+			.footer2 .copyright ul li a:hover{color:#909090; text-decoration: underline;}
+			.footer2 .copyright ul .as2{border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;padding: 0 12px;}
+			.footer2 .copyright .area{/*float: right;*/color:#000;}
+			.footer2 .copyright .filing a{color:#b0b0b0; text-decoration: none;}
+			.footer2 .copyright .filing a:hover{text-decoration: underline;}
+			.footer2 .copyright .filing{color:#b0b0b0;margin-top: 20px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<nav>
+			<ul>
+				<li><a href="#""><img src="../img/nav1.png"></a></li>
+				<li class="lis1"><a href="#">Mac</a></li>
+				<li class="lis1"><a href="#">iPad</a></li>
+				<li class="lis1"><a href="#">iPhone</a></li>
+				<li class="lis1"><a href="#">Watch</a></li>
+				<li class="lis1"><a href="#">Music</a></li>
+				<li class="lis1"><a href="#">技术支持</a></li>
+				<li><a href="#"><img src="../img/nav2.png"></a></li>
+				<li class="lis2"><a href="#"><img src="../img/nav3.png"></a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="header2">
+		<ul>
+			<li class="list"><a href="#"><img src="../img/nav2_1.png"></a></li>
+			<li class="lock"><a href="#"><img src="../img/nav2_3.png"></a></li>
+			<li class="logo"><a href="#"><img src="../img/nav2_2.png"></a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="pic_wall"><img src="../img/pic_wall.png"></div>
+		<div class="body">
+			<a href="#"><div class="body1"></div></a>
+			<a href="#"><div class="body2"></div></a>
+			<a href="#"><div class="body3"></div></a>
+			<a href="#"><div class="body4"></div></a>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_nav">
+			<div class="xg">
+				<h3>选购及了解</h3>
+				<ul>
+					<li><a href="#">Mac</a></li>
+					<li><a href="#">iPad</a></li>
+					<li><a href="#">iPhone</a></li>
+					<li><a href="#">Watch</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">iTunes</a></li>
+					<li><a href="#">iPod</a></li>
+					<li><a href="#">配件</a></li>
+				</ul>
+			</div>
+			<div class="as">
+				<h3>Apple Store 商店</h3>
+				<ul>
+					<li><a href="#">查找零售店</a></li>
+					<li><a href="#">Genius Bar 天才吧</a></li>
+					<li><a href="#">讲座和学习</a></li>
+					<li><a href="#">青少年活动</a></li>
+					<li><a href="#">Apple Store App</a></li>
+					<li><a href="#">翻新产品</a></li>
+					<li><a href="#">分期付款</a></li>
+					<li><a href="#">重复使用和循环利用</a></li>
+					<li><a href="#">订单状态</a></li>
+					<li><a href="#">选购帮助</a></li>
+				</ul>
+			</div>
+			<div class="js">
+				<div class="jy">
+					<h3>教育应用</h3>
+					<ul>
+						<li><a href="#">Apple 与教育</a></li>
+						<li><a href="#">高校师生选购</a></li>
+					</ul>
+				</div>
+				<div class="sw">
+					<h3>商务应用</h3>
+					<ul>
+						<li><a href="#">Apple 与商务</a></li>
+						<li><a href="#">商务选购</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="za">
+				<div class="zh">
+					<h3>帐户</h3>
+					<ul>
+						<li><a href="#">管理你的 Apple ID</a></li>
+						<li><a href="#">Apple Store 帐户</a></li>
+						<li><a href="#">iCloud.com</a></li>
+					</ul>
+				</div>
+				<div class="aj">
+					<h3>Apple 价值观</h3>
+					<ul>
+						<li><a href="#">辅助功能</a></li>
+						<li><a href="#">环境责任</a></li>
+						<li><a href="#">隐私</a></li>
+						<li><a href="#">供应商责任</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="about">
+				<h3>关于 Apple</h3>
+				<ul>
+					<li><a href="#">Apple 资讯</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">媒体资讯</a></li>
+					<li><a href="#">活动</a></li>
+					<li><a href="#">联系 Apple</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<p class="contact">更多选购方式：前往 <a href="#">Apple Store 零售店</a>，致电 400-666-8800 或查找在你附近的<a href="#">授权经销商</a>。</p>
+			<span>Copyright © 2016 Apple Inc. 保留所有权利。</span>
+			<ul>
+				<li><a href="#">隐私政策</a></li>
+				<li><a href="#" class="as2">使用条款</a></li>
+				<li><a href="#">销售政策</a></li>
+				<li><a href="#" class="as2">法律信息</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+			<div class="area">
+				<img src="../img/china.png">
+				<span>中国</span>
+			</div>
+			<p class="filing">京公安网安备 11010502008968 <a href="#">京ICP备10214630</a></p>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="footer2_nav">
+			<div class="xg">
+				<span>选购及了解</span>
+				<span class="span2">+</span>
+				<ul class="xg_list">
+					<li><a href="#">Mac</a></li>
+					<li><a href="#">iPad</a></li>
+					<li><a href="#">iPhone</a></li>
+					<li><a href="#">Watch</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">iTunes</a></li>
+					<li><a href="#">iPod</a></li>
+					<li><a href="#">配件</a></li>
+				</ul>
+			</div>
+			<div class="as">
+				<span>Apple Store 商店</span>
+				<span class="span2">+</span>
+				<ul class="as_list">
+					<li><a href="#">查找零售店</a></li>
+					<li><a href="#">Genius Bar天才吧</a></li>
+					<li><a href="#">讲座和学习</a></li>
+					<li><a href="#">青少年活动</a></li>
+					<li><a href="#">Apple Store App</a></li>
+					<li><a href="#">翻新产品</a></li>
+					<li><a href="#">分期付款</a></li>
+					<li><a href="#">重复使用和循环利用</a></li>
+					<li><a href="#">订单状态</a></li>
+					<li><a href="#">选购帮助</a></li>
+				</ul>
+			</div>
+			<div class="jy">
+				<span>教育应用</span>
+				<span class="span2">+</span>
+				<ul class="jy_list">
+					<li><a href="#">Apple 与教育</a></li>
+					<li><a href="#">高校师生选购</a></li>
+				</ul>
+			</div>
+			<div class="sw">
+				<span>商务应用</span>
+				<span class="span2">+</span>
+				<ul class="sw_list">
+					<li><a href="#">Apple 与商务</a></li>
+					<li><a href="#">商务选购</a></li>
+				</ul>
+			</div>
+			<div class="zh">
+				<span>账户</span>
+				<span class="span2">+</span>
+				<ul class="zh_list">
+					<li><a href="#">管理你的Apple ID</a></li>
+					<li><a href="#">Apple Store账户</a></li>
+					<li><a href="#">iCloud.com</a></li>
+				</ul>
+			</div>
+			<div class="aj">
+				<span>Apple 价值观</span>
+				<span class="span2">+</span>
+				<ul class="aj_list">
+					<li><a href="#">辅助功能</a></li>
+					<li><a href="#">环境责任</a></li>
+					<li><a href="#">隐私</a></li>
+					<li><a href="#">供应商责任</a></li>
+				</ul>
+			</div>
+			<div class="about">
+				<span>关于 Apple</span>
+				<span class="span2">+</span>
+				<ul class="about_list">
+					<li><a href="#">Apple 资讯</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">媒体资讯</a></li>
+					<li><a href="#">活动</a></li>
+					<li><a href="#">联系Apple</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p class="contact">更多选购方式：前往 <a href="#">Apple Store 零售店</a>，致电 400-666-8800 或查找在你附近的<a href="#">授权经销商</a>。</p>
+			<span>Copyright © 2016 Apple Inc. 保留所有权利。</span>
+			<ul>
+				<li><a href="#">隐私政策</a></li>
+				<li><a href="#" class="as2">使用条款</a></li>
+				<li><a href="#">销售政策</a></li>
+				<li><a href="#" class="as2">法律信息</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+			<div class="area">
+				<img src="../img/china.png">
+				<span>中国</span>
+			</div>
+			<p class="filing">京公安网安备 11010502008968 <a href="#">京ICP备10214630</a></p>
+		</div>
+	</div>
+</body>
+</html>

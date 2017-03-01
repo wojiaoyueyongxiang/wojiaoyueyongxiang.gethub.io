@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: fixed;
+}
+.pg{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	width: 1100px;
+	height: 70px;
+	padding-top: 120px;
+	margin: 0 auto;
+}
+.l2{
+	margin-top: 15px;
+}
+.bodyer{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.bodyer ul{
+	float: left;
+	list-style: none;
+	margin-left: 4px;
+}
+.u1{
+	margin-right: 10px;
+}
+.u1 li img,.u4 li img{
+	width: 278px;
+	height: 138px;
+	border: 1px solid rgb(146,146,146);
+}
+.u2 li img,.u3 li img{
+	width: 158px;
+	height: 138px;
+	border: 1px solid rgb(146,146,146);
+}
+.footer {
+	width: 450px;
+	height: 20px;
+	padding-top: 120px;
+	margin: 0 auto;
+}
+.u1 li:nth-child(1){
+	overflow: hidden;
+}
+.u2 li:nth-child(1){
+	overflow: hidden;
+}
+.u3 li:nth-child(1){
+	overflow: hidden;
+}
+.u4 li:nth-child(1){
+	overflow: hidden;
+}
+li img:hover{
+animation-name:zixun;
+animation-duration:1s;
+animation-delay:0.2s;
+animation-timing-function:ease-in;
+}
+@-webkit-keyframes zixun{
+	0%{transform: translateY(0);}
+	16%{transform: translateY(-30px);}
+	33%{transform: translateY(0);}
+	50%{transform: translateY(-10px);}
+	66%{transform: translateY(0);}
+	83%{transform: translateY(-5px);}
+	100%{transform: translateY(0);}
+}
+.lr img{
+	animation: lr 0.8s linear  ; 
+}
+@-webkit-keyframes lr{
+	0%{transform: translateX(-15px);}
+	14%{transform: translateX(15px);}
+	28%{transform: translateX(-15px);}
+	43%{transform: translateX(15px);}
+	57%{transform: translateX(-15px);}
+	71%{transform: translateX(15px);}
+	86%{transform: translateX(-15px);}
+	100%{transform: translateX(0);}
+}
+li .sc{
+	animation:sc 0.6s linear;
+}
+@-webkit-keyframes sc{
+	0%{transform: scale(0.1,0.1);}
+	20%{transform: scale(1,1);}
+	40%{transform: scale(0.7,0.7);}
+	60%{transform: scale(1,1);}
+	80%{transform: scale(0.9,0.9);}
+	100%{transform: scale(1,1);}
+}
+.zt{
+	position: relative;
+}
+.ztk{
+	width: 150px;
+	height: 12px;
+	list-style: none;
+	position: absolute;
+	top: 100px;
+	left: 70px;
+	overflow: hidden;
+}
+.ztk li{
+	font-size: 12px;
+	color: white;
+	margin-bottom: 18px;
+	animation: zt 5.5s linear 1s infinite;
+	transition: top 1s;
+}
+@-webkit-keyframes zt{
+	0%{transform: translateY(0);}
+	12.5%{transform: translateY(-30px);}
+	25%{transform: translateY(-30px);}
+	37.5%{transform: translateY(-60px);}
+	50%{transform: translateY(-60px);}
+	62.5%{transform: translateY(-30px);}
+	75%{transform: translateY(-30px);}
+	87.5%{transform: translateY(0);}
+	100%{transform: translateY(0);}
+}
+.zt2{
+	position: relative;
+}
+.ztk2{
+	width: 150px;
+	height: 12px;
+	list-style: none;
+	position: absolute;
+	top: 100px;
+	left: 70px;
+	overflow: hidden;
+}
+.ztk2 li{
+	font-size: 12px;
+	color: white;
+	margin-bottom: 18px;
+	animation: zt 6s linear 1s infinite;
+	transition: top 1s;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>鸟</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/niao.css">
+
+</head>
+<body>
+	<div id="flyWrap"> <!-- 最大的div -->
+		<div id="gameStart"> <!-- 游戏开始页面 -->
+			<div id="score"><!-- 分数 -->
+				<img src="img/0.jpg">
+			</div>
+
+			<div id="head"> <!-- 中间英文字 -->
+				<img src="img/head.jpg">
+				<span></span><!-- 中间鸟,用css动画切换图片 -->
+			</div>
+
+			<div id="btns"><!-- 最下面的两个按钮 -->
+				<img src="img/start.jpg" id="start">
+				<img src="img/submit.jpg" id="submit">
+			</div>
+		</div>
+
+		<div id="flyBird"><!-- 游戏中的小鸟 -->
+			<img src="img/bird0.png">
+		</div>
+
+		<div id="slider"><!-- 最下面运动的绿条 -->
+			<img src="img/slider.jpg">
+			<img src="img/slider.jpg">
+		</div>
+		<!-- 管道 -->
+		<ul id="pipeWrap">
+			
+		</ul>
+		<div id="gameOver">
+			<img src="img/game_over.jpg" id="over">
+			<img src="img/message.jpg" id="message">
+			<img src="img/ok.jpg" id="okButton">
+		</div>
+	</div>
+	<audio src="source/game_music.mp3" id="game_music" loop=""></audio>
+	<audio src="source/bullet.mp3" id="bullet" ></audio>
+	<audio src="source/game_over.mp3" id="gameEndMusic"></audio>
+</body>
+</html>
+	<script type="text/javascript" src="js/niao.js"></script>
